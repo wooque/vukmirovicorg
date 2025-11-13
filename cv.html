@@ -32,15 +32,20 @@
             padding-bottom: 10px;
         }
 
-        #print {
+        #menu {
             position: relative;
             float: right;
             top: -60px;
             left: -15px;
         }
 
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
         @media print {
-            #print {
+            #menu {
                 display: none;
             }
             body {
@@ -56,7 +61,10 @@
     <p><b>Name:</b> Vuk Mirović</p>
     <p><b>Location:</b> Belgrade, Serbia</p>
     <p><b>Email:</b><script>document.write(' con' + 'tact@vu' + 'kmirovic.o' + 'rg');</script></p>
-    <button id="print" onclick="window.print()">Print</button>
+    <div id="menu">
+        <a href="assets/Vuk Mirovic - CV.pdf"><img src="assets/pdf-file.png" title="PDF"/></a>
+        <img src="assets/printing.png" title="Print" onclick="window.print()" style="cursor: pointer;"/>
+    </div>
     <h3>Work experience</h3>
     <ul>
         <li class="exp">
